@@ -12,3 +12,12 @@ There are many inbuilt services in Angularjs. These inbuilt services start with 
 -$timeout
 -$interval
 -$filter
+
+Custom Services in Angularjs:
+
+We can define our own services in Angularjs.There are several ways to create custom services.
+1)By using service() method
+2)By using factory() method
+3)By using provider() method
+4)By using value() method
+5)By using constant() method
