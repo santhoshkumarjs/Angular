@@ -21,3 +21,5 @@ We can define our own services in Angularjs.There are several ways to create cus
 3)By using provider() method
 4)By using value() method
 5)By using constant() method
+
+But service() and factory() methods are most commonly used to create custom services.
