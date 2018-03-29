@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='BGI_App'>
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app_main.js"></script>
+  <script src="controller.js"></script>
+</head>
+<body>
+
+<div class="container" ng-controller='elementController'>
+  <h2>{{HEADER_TEXT}}</h2>
+  <table class="table table-bordered" ng-controller='tableController'>
+    <thead>
+      <tr>
+        <th ng-repeat='th in tableHeader'>{{th}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat='(key, val) in tableData'>
+        <td>{{val.firstname}}</td>
+        <td>{{val.lastname}}</td>
+        <td>{{val.emailid}}</td>
+		<td>{{val.mobile}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
