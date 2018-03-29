@@ -7,10 +7,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="app_main.js"></script>
+  <script src="app_services.js"></script>
   <script src="controller.js"></script>
 </head>
 <body>
-
+<div ng-controller='example'>{{examples}}</div>
 <div class="container" ng-controller='elementController'>
   <h2>{{HEADER_TEXT}}</h2>
   <table class="table table-bordered" ng-controller='tableController'>
